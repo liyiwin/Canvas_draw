@@ -1,5 +1,6 @@
 package com.example.draw
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,9 +19,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setListener()
+
+
     }
-
-
 
     fun setListener(){
 
@@ -53,4 +54,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 }
