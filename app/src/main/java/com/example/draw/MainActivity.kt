@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.CompoundButton
 import android.widget.RadioGroup
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,22 @@ class MainActivity : AppCompatActivity() {
 
         setListener()
 
+        setActions()
+
+
+    }
+
+    fun setActions(){
+
+        button2.setOnClickListener {
+
+            if (shap != "null") intent(shap)
+
+            else Toast.makeText(this,"尚未選取任何圖案",Toast.LENGTH_LONG).show()
+
+        }
+
+        radioGroup.setOnCheckedChangeListener(Listener)
 
     }
 
