@@ -12,6 +12,35 @@ class Main2Activity : AppCompatActivity() {
     }
 
 
+    fun setView(shap:String){
+
+
+        when (shap){
+
+
+             "Arc" -> drawArc()
+
+            "Circle" -> drawCircle()
+
+            "Line" ->  drawLine()
+
+             "Oval" -> drawOval()
+
+             "Poin" -> drawPoint()
+
+             "Path" -> drawPath()
+
+             "oundRect" -> drawRoundRect()
+
+             "Rect" -> drawRect()
+
+        }
+
+
+
+    }
+
+
 
     fun drawArc(){
 
