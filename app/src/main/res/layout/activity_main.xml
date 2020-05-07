@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/drawArc_rb "
+            android:id="@+id/drawArc_rb"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:text="扇形" />
