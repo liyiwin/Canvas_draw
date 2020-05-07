@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
 
    lateinit var  Listener : RadioGroup.OnCheckedChangeListener
 
+    var shap = "null"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,20 +29,21 @@ class MainActivity : AppCompatActivity() {
 
                 when(checkedId) {
 
-                    R.id.drawArc_rb -> Log.d("shap","Arc")
+                    R.id.drawArc_rb -> shap = "Arc"
 
-                    R.id.drawCircle_rb -> Log.d("shap","Circle")
+                    R.id.drawCircle_rb -> shap = "Circle"
 
-                    R.id.drawLine_rb -> Log.d("shap","Line")
-                    R.id.drawOval_rb -> Log.d("shap","Oval")
+                    R.id.drawLine_rb -> shap = "Line"
 
-                    R.id.drawPoint_rb-> Log.d("shap","Poin")
+                    R.id.drawOval_rb ->shap = "Oval"
 
-                    R.id.drawPath_rb-> Log.d("shap","Path")
+                    R.id.drawPoint_rb-> shap = "Poin"
 
-                    R.id.drawRoundRect_rb->Log.d("shap","oundRect")
+                    R.id.drawPath_rb-> shap = "Path"
 
-                    R.id.drawRect_rb->Log.d("shap","Rect")
+                    R.id.drawRoundRect_rb-> shap = "oundRect"
+
+                    R.id.drawRect_rb->shap = "Rect"
 
 
                 }
@@ -48,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
 
     }
 }
