@@ -55,4 +55,15 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    fun intent(extra:String){
+
+        val intent = Intent(this,Main2Activity::class.java)
+
+        intent.putExtra("shap",extra)
+
+        startActivity(intent)
+
+    }
+
 }
